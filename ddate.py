@@ -48,7 +48,7 @@ def main():
     if args.day:
         message = ddate(args.year, args.month, args.day)
     else:
-        today = datetime.date(year, month, day)
+        today = datetime.date.today()
         message = ddate(today.year, today.month, today.day)
 
     sys.stdout.write("%s\n" % message)
